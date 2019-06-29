@@ -16,7 +16,10 @@ const translate = new Translate({
 
 client.login(process.env.BOT_TOKEN);
 
-client.on(`ready`, () => console.log(`Logged in as ${client.user.tag}!`));
+client.on(`ready`, () => {
+	console.log(`Logged in as ${client.user.tag}!`)
+	client.user.setActivity('//help and //cmds')
+})
 
 client.on(`message`, msg => {
 	if (!msg.content.startsWith(prefix)) return;
@@ -35,7 +38,7 @@ client.on(`message`, msg => {
 	
 	if (msg.content === `${prefix}ping`) msg.reply(client.ping + `ms`); 
   	if (msg.content === `${prefix}help`) msg.reply(`Hi, I am EpicBot. I am still in the very early stages of development. Currently available commands can be listed using \`${prefix}cmds\`.`);
-  	if (msg.content === `${prefix}cmds`) msg.reply(`Available commands:\n\`${prefix}ping\`\n\`${prefix}help\`\n\`${prefix}cmds\`\n\`${prefix}spam [text]\`\n\`${prefix}cease\`\n\`${prefix}translate [text] [language] or ${prefix}t [text] [language]\`.`);
+  	if (msg.content === `${prefix}cmds`) msg.reply(`Available commands:\n\`${prefix}ping\`\n\`${prefix}help\`\n\`${prefix}cmds\`\n\`${prefix}say [text]\`\n\`${prefix}spam [text]\`\n\`${prefix}cease\`\n\`${prefix}translate [text] [language] or ${prefix}t [text] [language]\`.`);
 	
 	if (msg.content.startsWith(`${prefix}say`)) {
 		const text = args.slice(1).join(` `);
