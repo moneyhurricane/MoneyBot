@@ -3,7 +3,7 @@ Although it's mainly for entertainment, it also has a very useful translation fe
 
 Unfortunately, I've yet to figure out how to get the translation feature working on a server as it requires a powershell command to be run at each session initiation.
 If you know how to do that, let me know!
-All other commands work with the server software.
+All other commands work with the host.
 
 This bot is hosted with Heroku.
 
