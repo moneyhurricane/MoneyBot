@@ -8,6 +8,6 @@ All other commands work with the server software.
 This bot is hosted with Heroku.
 
 If you'd like to  give the bot a try, join this server:
-(If you would like to use the translation feature, ping me and I will do it ASAP.)
+(If you would like to use the translation feature, ping me and I will get the bot running off my PC ASAP.)
 
 https://discord.gg/pD3Gx4H
