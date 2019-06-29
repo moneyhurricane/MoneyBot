@@ -37,7 +37,7 @@ client.on(`message`, msg => {
 	const args = msg.content.trim().split(/ +/g);
 	
 	if (msg.content === `${prefix}ping`) msg.reply(client.ping + `ms`); 
-  	if (msg.content === `${prefix}help`) msg.reply(`Hi, I am EpicBot. I am still in the very early stages of development. Currently available commands can be listed using \`${prefix}cmds\`.`);
+  	if (msg.content === `${prefix}help`) msg.reply(`Hi, I am MoneyBot. I am still in the very early stages of development. Currently available commands can be listed using \`${prefix}cmds\`.`);
   	if (msg.content === `${prefix}cmds`) msg.reply(`Available commands:\n\`${prefix}ping\`\n\`${prefix}help\`\n\`${prefix}cmds\`\n\`${prefix}say [text]\`\n\`${prefix}spam [text]\`\n\`${prefix}cease\`\n\`${prefix}translate [text] [language] or ${prefix}t [text] [language]\`.`);
 	
 	if (msg.content.startsWith(`${prefix}say`)) {
