@@ -1,6 +1,5 @@
 const Discord = require(`discord.js`);
 const client = new Discord.Client();
-const auth = require(`./auth.json`);
 const prefix = `//`;
 var spamchecker = 0;
 var taskchecker = 0;
@@ -15,7 +14,7 @@ const translate = new Translate({
   projectId: projectId,
 });
 
-client.login(auth.token);
+client.login(process.env.BOT_TOKEN);
 
 client.on(`ready`, () => console.log(`Logged in as ${client.user.tag}!`));
 
