@@ -11,3 +11,7 @@ If you'd like to  give the bot a try, join this server:
 (If you would like to use the translation feature, ping me and I will get the bot running off my PC ASAP.)
 
 https://discord.gg/pD3Gx4H
+
+Alternatively, you can invite this bot to your own server:
+
+https://discordapp.com/oauth2/authorize?&client_id=594292251551727629&scope=bot&permissions=68537408
