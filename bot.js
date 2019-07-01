@@ -115,7 +115,7 @@ client.on(`message`, msg => {
   		})
   		.catch(err => {
   			console.log(`ERROR`,err)
-   			msg.channel.send(`Invalid language code! Languages codes are at https://cloud.google.com/translate/docs/languages !`);
+   			msg.channel.send(`Invalid language code! Languages codes are at https://cloud.google.com/translate/docs/languages ! If you're a Hackweek Judge, message MoneyHurricane#8625, as this feature is currently not compatible with a web server.`);
    		})
   		});
 
